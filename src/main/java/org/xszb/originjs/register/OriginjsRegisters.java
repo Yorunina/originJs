@@ -4,8 +4,11 @@ import io.github.edwinmindcraft.apoli.api.power.factory.*;
 import io.github.edwinmindcraft.apoli.api.power.factory.EntityAction;
 import io.github.edwinmindcraft.apoli.api.power.factory.EntityCondition;
 import io.github.edwinmindcraft.apoli.api.registry.ApoliRegistries;
+import io.github.edwinmindcraft.apoli.common.power.DummyPower;
+import io.github.edwinmindcraft.apoli.common.registry.ApoliRegisters;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 import org.xszb.originjs.Originjs;
 
 public class OriginjsRegisters {
@@ -19,6 +22,10 @@ public class OriginjsRegisters {
     public static final DeferredRegister<BlockAction<?>> BLOCK_ACTIONS;
     public static final DeferredRegister<BiEntityCondition<?>> BIENTITY_CONDITIONS;
     public static final DeferredRegister<BiEntityAction<?>> BIENTITY_ACTIONS;
+
+    public static final RegistryObject<DummyPower> NO_NEED_FOOD = ApoliRegisters.POWER_FACTORIES.register("no_need_food", DummyPower::new);
+    public static final RegistryObject<DummyPower> NO_NEED_AIR = ApoliRegisters.POWER_FACTORIES.register("no_need_air", DummyPower::new);
+    public static final RegistryObject<DummyPower> UNDEAD_MOB_TYPE = ApoliRegisters.POWER_FACTORIES.register("undead_mob_type", DummyPower::new);
 
     public static void initialize(IEventBus bus) {
         ENTITY_CONDITIONS.register(bus);

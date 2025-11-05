@@ -26,7 +26,6 @@ public class PlayerEventKjsEntityCondition extends OriginEventJS {
 
     public void setResult(boolean result) {
         this.event.setCheckResult(result);
-        this.event.setCanceled(true);
     }
 
     public Level getLevel() { return event.getEntity().level();}

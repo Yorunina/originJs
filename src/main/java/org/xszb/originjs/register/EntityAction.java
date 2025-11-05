@@ -30,6 +30,7 @@ public class EntityAction {
                     "kjs_block_action",
                     KJSblockActionPower::new
             );
+
     public static void bootstrap() {
 
     }

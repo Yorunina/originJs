@@ -26,6 +26,7 @@ public class OriginJsEvent {
 
     public static final EventHandler BlockCondition = GROUP.common("OriginBlockCondition", () -> BlockEventKjsBlockCondition.class).extra(Extra.STRING).hasResult();
 
+    public static final EventHandler OriginChanged = GROUP.server("OriginChanged", () -> OriginChangedJS.class);
 
 
 

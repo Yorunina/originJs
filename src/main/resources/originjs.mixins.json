@@ -5,7 +5,10 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "originjs.refmap.json",
   "mixins": [
-    "EntityMixin"
+    "EntityMixin",
+    "OriginContainerMixin",
+    "LivingEntityMixin",
+    "FoodDataMixin"
   ],
   "client": [
   ],
